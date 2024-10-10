@@ -1,0 +1,44 @@
+{
+  "name": "vue-form-app",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host",
+    "build": "vite build",
+    "preview": "vite preview",
+    "lint": "eslint \"**/*.{vue,js,ts,jsx,cjs,mjs}\" --fix --ignore-path .gitignore",
+    "v-patch": "npm version patch && auto-changelog -p -o CHANGELOG.md && git add CHANGELOG.md package.json package-lock.json && git commit -m 'Update changelog'",
+    "v-minor": "npm version minor && auto-changelog -p -o CHANGELOG.md && git add CHANGELOG.md package.json package-lock.json && git commit -m 'Update changelog'",
+    "v-major": "npm version major && auto-changelog -p -o CHANGELOG.md && git add CHANGELOG.md package.json package-lock.json && git commit -m 'Update changelog'"
+  },
+  "dependencies": {
+    "@vueuse/core": "^11.1.0",
+    "axios": "^1.7.7",
+    "pinia": "^2.2.4",
+    "sass": "^1.79.4",
+    "vue": "^3.5.10",
+    "vue-axios": "^3.5.2",
+    "vue-dompurify-html": "^5.1.0",
+    "vue-i18n": "^10.0.4",
+    "vue-router": "^4.4.5"
+  },
+  "devDependencies": {
+    "@eslint/eslintrc": "^3.1.0",
+    "@eslint/js": "^9.11.1",
+    "@html-eslint/eslint-plugin": "^0.27.0",
+    "@html-eslint/parser": "^0.23.0",
+    "@rushstack/eslint-patch": "^1.7.2",
+    "@vitejs/plugin-vue": "^5.1.2",
+    "@vue/eslint-config-prettier": "^9.0.0",
+    "autoprefixer": "^10.4.20",
+    "eslint": "^8.56.0",
+    "eslint-plugin-html": "^8.1.2",
+    "eslint-plugin-vue": "^9.21.1",
+    "jsdom": "^25.0.1",
+    "postcss": "^8.4.47",
+    "postcss-nesting": "^13.0.0",
+    "prettier": "^3.3.3",
+    "vite": "^5.4.8"
+  }
+}
