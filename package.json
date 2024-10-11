@@ -8,6 +8,7 @@
     "build": "vite build",
     "preview": "vite preview",
     "lint": "eslint \"**/*.{vue,js,ts,jsx,cjs,mjs}\" --fix --ignore-path .gitignore",
+    "test": "vitest",
     "v-patch": "npm version patch && auto-changelog -p -o CHANGELOG.md && git add CHANGELOG.md package.json package-lock.json && git commit -m 'Update changelog'",
     "v-minor": "npm version minor && auto-changelog -p -o CHANGELOG.md && git add CHANGELOG.md package.json package-lock.json && git commit -m 'Update changelog'",
     "v-major": "npm version major && auto-changelog -p -o CHANGELOG.md && git add CHANGELOG.md package.json package-lock.json && git commit -m 'Update changelog'"
@@ -31,6 +32,7 @@
     "@rushstack/eslint-patch": "^1.7.2",
     "@vitejs/plugin-vue": "^5.1.2",
     "@vue/eslint-config-prettier": "^9.0.0",
+    "@vue/test-utils": "^2.4.6",
     "autoprefixer": "^10.4.20",
     "eslint": "^8.56.0",
     "eslint-plugin-html": "^8.1.2",
@@ -39,6 +41,7 @@
     "postcss": "^8.4.47",
     "postcss-nesting": "^13.0.0",
     "prettier": "^3.3.3",
-    "vite": "^5.4.8"
+    "vite": "^5.4.8",
+    "vitest": "^2.1.2"
   }
 }
